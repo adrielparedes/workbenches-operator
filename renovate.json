@@ -13,6 +13,23 @@
   "vulnerabilityAlerts": {
     "enabled": true
   },
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "gomod": {
+    "packageRules": [
+      {
+        "description": "Undo MintMaker's global re-enable of indirect modules. Vulnerability alerts still open PRs.",
+        "matchManagers": [
+          "gomod"
+        ],
+        "matchDepTypes": [
+          "indirect"
+        ],
+        "enabled": false
+      }
+    ]
+  },
   "packageRules": [
     {
       "description": "Disable routine version updates; vulnerability alerts still raise PRs",
@@ -28,8 +45,7 @@
       ],
       "semanticCommits": "enabled",
       "semanticCommitType": "fix",
-      "semanticCommitScope": "deps",
-      "groupName": "go"
+      "semanticCommitScope": "deps"
     },
     {
       "description": "GitHub Actions: weekly version bumps, match former Dependabot chore(gha)",
