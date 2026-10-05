@@ -16,20 +16,6 @@
   "lockFileMaintenance": {
     "enabled": false
   },
-  "gomod": {
-    "packageRules": [
-      {
-        "description": "Undo MintMaker's global re-enable of indirect modules. Vulnerability alerts still open PRs.",
-        "matchManagers": [
-          "gomod"
-        ],
-        "matchDepTypes": [
-          "indirect"
-        ],
-        "enabled": false
-      }
-    ]
-  },
   "packageRules": [
     {
       "description": "Disable routine version updates; vulnerability alerts still raise PRs",
