@@ -475,7 +475,7 @@ Run `make help` for the full list. Common targets:
 | Kustomize | `KUSTOMIZE_VERSION` | v5.6.0 |
 | controller-gen | `CONTROLLER_TOOLS_VERSION` | v0.18.0 |
 | setup-envtest | `ENVTEST_VERSION` | release-0.23 |
-| golangci-lint | `GOLANGCI_LINT_VERSION` | v2.12.2 |
+| golangci-lint | `GOLANGCI_LINT_VERSION` | v2.14.0 |
 
 For Go, dependency, and upstream manifest upgrades, see [`DEPENDENCIES.md`](DEPENDENCIES.md).
 

@@ -82,7 +82,7 @@ Build tool versions are pinned in the `Makefile`. Update the corresponding versi
 | kustomize | `KUSTOMIZE_VERSION` | v5.6.0 |
 | controller-gen | `CONTROLLER_TOOLS_VERSION` | v0.18.0 |
 | setup-envtest | `ENVTEST_VERSION` | release-0.23 |
-| golangci-lint | `GOLANGCI_LINT_VERSION` | v2.12.2 |
+| golangci-lint | `GOLANGCI_LINT_VERSION` | v2.14.0 |
 
 After updating a version, remove the old binary from `bin/` to trigger a fresh download:
 
