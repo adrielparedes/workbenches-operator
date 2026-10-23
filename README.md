@@ -173,8 +173,7 @@ This requires an ODH notebook controller image with support for the setting
 and readiness probes on the main workbench container and injected kube-rbac-proxy
 sidecar; it does not create probes or alter startup probes. Changes take effect on
 Notebook creation or update, subject to the existing running-workbench restart gate;
-changing the policy does not itself restart running workbenches. Removing the policy
-does not revert timeout values already written into Notebook specs.
+changing the policy does not itself restart running workbenches.
 
 ### Status
 
